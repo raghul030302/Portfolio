@@ -1,0 +1,63 @@
+  /* Video Background for Mobile */
+  .video2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    display:inline; 
+    opacity: 50%;
+  }
+ 
+  @media (min-width: 768px) {
+    .video2 {
+      display: none; 
+    }
+  }
+
+  @media (min-aspect-ratio: 9/16) {
+    .video2 {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-aspect-ratio: 9/16) {
+    .video2 {
+      width: 99%;
+      height: 100%;
+    }
+  }
+  
+  /* Desktop Video Background */
+  .video1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    display: none; 
+    opacity: 30%;
+  }
+  
+  @media (min-width: 768px) {
+    .video1 {
+      display: block;
+    }
+  }
+  
+  @media (min-aspect-ratio: 9/16) {
+    .video1 {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-aspect-ratio: 9/16) {
+    .video1 {
+      width: auto;
+      height: 100%;
+    }
+  }
